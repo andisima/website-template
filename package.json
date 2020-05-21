@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/styles/styles.scss styles.css",
+    "dev": "concurrently --kill-others \"npm run sass & npm run server\"",
+    "server": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
